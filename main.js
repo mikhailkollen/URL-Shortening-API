@@ -25,7 +25,8 @@ const shortenLink = async (value) => {
     console.log(data.result.full_short_link2);
     let longLink = value;
     if (longLink.length > 30) {
-      longLink = value.substring(0, 30) + "...";
+      longLink = `${value.substring(0, 80)}...
+        <button class="show-more-btn elliptic-btn">View full link</button>`;
     }
     if (listOfLinks.length > 2) {
       listOfLinks.pop();
@@ -41,6 +42,12 @@ const shortenLink = async (value) => {
 `);
 
     linksContainer.innerHTML = listOfLinks.join("");
+    const showMoreBtns = document.querySelectorAll(".show-more-btn");
+    showMoreBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        btn.parentNode.textContent = value;
+      });
+    });
   } catch (error) {
     console.log("Something went wrong :(");
   }

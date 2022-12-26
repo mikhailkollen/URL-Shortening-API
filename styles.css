@@ -242,6 +242,7 @@ header {
   background-color: azure;
   margin: 20px 0px 20px 0px;
   border-radius: 8px;
+  max-height: 500px;
 }
 
 .short-links-container {
@@ -270,6 +271,186 @@ header {
   color: white;
 }
 
+.statistics-banner {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+
+.statistics-banner h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.statistics-banner p {
+  margin-top: 1rem;
+  color: hsl(257, 7%, 63%);
+}
+
+.dashboard-grid-infoboard {
+  margin-top: 4.5rem;
+  width: 80%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.infoboard-article {
+  background-color: rgb(215, 244, 244);
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  padding: 20px;
+  max-height: 0;
+  min-height: 220px;
+}
+
+.infoboard-article img {
+  height: 40px;
+  width: 40px;
+  background-color: hsl(260, 8%, 14%);
+  padding: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: -40px;
+}
+
+.infoboard-article h3 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.infoboard-article p {
+  margin-top: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(257, 7%, 63%);
+}
+
+.infoboard-article span {
+  position: absolute;
+  background-color: hsl(180, 66%, 49%);
+  height: 12px;
+  width: 2rem;
+  right: -2rem;
+  top: 50%;
+}
+
+.lowered-article-1 {
+  margin-top: 4rem;
+}
+
+.lowered-article-2 {
+  margin-top: 8rem;
+}
+
+.show-more-btn {
+  background: transparent;
+  border-color: transparent;
+  text-transform: capitalize;
+  color: black;
+  font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+  padding-left: 0.25rem;
+}
+
+.footer-grid {
+  width: 100%;
+  display: grid;
+  justify-content: space-between;
+  background-color: hsl(260, 8%, 14%);
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2rem;
+  color: white;
+  padding: 40px 0 40px 0;
+  min-height: 200px;
+}
+
+.footer-grid-2-col {
+  grid-column: span 2;
+}
+
+.footer-grid div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  color: white;
+}
+
+.socials-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.socials-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  color: white;
+  transition: all 250ms ease-in-out;
+}
+
+.socials-icon:hover {
+  color: hsl(180, 66%, 49%);
+  transform: scale(1.3);
+}
+
+.boost-links-banner {
+  background-image: url(./images/bg-boost-desktop.svg);
+  width: 100%;
+  min-height: 100px;
+  background-color: hsl(255, 11%, 22%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: hsl(36, 100%, 99%);
+  padding: 1.4rem 0 1.4rem 0;
+  margin-top: 5rem;
+}
+
+.boost-links-banner h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1.4rem 0 1.4rem;
+}
+
+.footer-resources-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+}
+
+.footer-resources-list ul {
+  /* padding-top: 1.2rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-resources-list h4 {
+  font-size: 1.4rem;
+  padding-bottom: 1.2rem;
+}
+
+.footer-resources-list ul li {
+  padding-bottom: 1.2rem;
+}
+
+.footer-resources-list a {
+  font-size: 1.2rem;
+  color: hsl(257, 7%, 63%);
+}
+
+#footer-logo-container {
+  align-items: center;
+}
 /* MEDIA QUERIES */
 
 @media (max-width: 900px) {
