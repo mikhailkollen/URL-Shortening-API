@@ -33,6 +33,7 @@
     </style>
   </head>
   <body>
+
     <header>
       <nav class="navbar">
         <button class="toggle-btn">
@@ -49,13 +50,17 @@
             <li class="nav-item"><a href="#">Features</a></li>
             <li class="nav-item"><a href="#">Pricing</a></li>
             <li class="nav-item"><a href="#">Resources</a></li>
+            <li class="nav-item-nav-btns">
+              
+            </li>
           </ul>
+          <div class="nav-btns-container">
+            <a href="#" class="nav-item nav-btn">Login</a>
+            <button type="button" class="nav-item elliptic-btn sign-up-btn">
+              Sign Up
+            </button>
         </div>
-        <div class="nav-btns-container">
-          <a href="#" class="nav-item nav-btn">Login</a>
-          <button type="button" class="nav-item elliptic-btn sign-up-btn">
-            Sign Up
-          </button>
+       
         </div>
       </nav>
     </header>
@@ -84,8 +89,11 @@
       </section>
 
       <section class="shorten-link-container">
+            
         <div class="shorten-link-form">
+          
           <form class="form" action="">
+            <div class="background-color"></div>
             <input type="url" id="url" placeholder="Shorten a link here..." />
             <button
               type="submit"
