@@ -313,6 +313,10 @@ header {
   padding: 20px;
 }
 
+.short-link h2 {
+  color: hsl(180, 66%, 49%);
+}
+
 .long-link {
   max-width: 500px;
   padding: 20px;
@@ -321,6 +325,7 @@ header {
 
 .copy-btn {
   margin-left: 10px;
+  border-radius: 6px;
 }
 
 .copy-btn-clicked {
@@ -614,6 +619,28 @@ header {
 
   .shorten-link-form input {
     width: 90%;
+  }
+
+  .shortened {
+    flex-direction: column;
+    justify-content: center;
+    max-height: none;
+  }
+
+  .short-link {
+    flex-direction: column;
+    width: 90%;
+    text-align: center;
+  }
+
+  .long-link {
+    border-bottom: 1px solid hsla(258, 7%, 63%, 0.427);
+  }
+
+  .copy-btn {
+    margin-top: 2rem;
+    width: 100%;
+    margin-left: 0;
   }
 
   .nav-links-container svg {
